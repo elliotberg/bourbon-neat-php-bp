@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name> elliot berg <role> development <twitter> @aghostbro
+    <name> evan dobos <role> design <email> evan@picturethiswebcenter.com
+
+# THANKS
+
+    Open source web development.
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, SASS
+    jQuery, Modernizr, Respond.js

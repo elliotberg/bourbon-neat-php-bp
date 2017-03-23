@@ -1,0 +1,77 @@
+img {
+  max-width: 100%;
+}
+
+// type
+body {
+  color: $body-color;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    color: $link-color-alt;
+  }
+}
+
+#{$all-buttons},
+.btn {
+  color: #fff;
+  background-color: $link-color;
+  border: none;
+  padding: 10px 15px;
+}
+
+#{$all-buttons-focus},
+#{$all-buttons-hover},
+.btn:focus,
+.btn:hover {
+  color: #fff;
+  background-color: $link-color-alt;
+}
+
+.container {
+  @include outer-container($mobile);
+  width: 100%;
+  padding: 0 1em;
+  @include media($tablet) {
+    max-width: $tablet;
+  }
+  @include media($desktop) {
+    max-width: $desktop;
+  }
+  @include media($widescreen) {
+    max-width: $widescreen;
+  }
+}
+
+nav ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+
+  li a {
+    display: block;
+  }
+}
+
+// forms
+#{$all-text-inputs} {
+  width: 100%;
+  padding: 5px;
+  margin: 0 0 1em;
+  background-color: #fff;
+  border: 1px solid $body-color;
+}
+#{$all-text-inputs-hover} {
+  border: 1px solid $link-color-alt;
+}
+
+#{$all-text-inputs-focus},
+#{$all-text-inputs-active} {
+  border: 1px solid $link-color;
+}
+#fav-color {display: none;}
