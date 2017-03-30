@@ -1,13 +1,10 @@
 <?php
 $metaTitle='';
 $metaDesc='';
-$metaKeywords='';
 require_once 'includes/header.php';
 ?>
 
 <div class="">
-
-
 
 </div>
 
