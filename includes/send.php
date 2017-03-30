@@ -6,9 +6,9 @@ $url = '../contact.php?confirm=true';
 
 $headers  = 'MIME-Version: 1.0'."\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1'."\r\n";
-$headers .= 'From: '$emailfrom."\r\n";
+$headers .= 'From: '.$emailfrom."\r\n";
 $headers .= 'Reply-To: '.strip_tags($_POST['Email'])."\r\n";
-$headers .= 'Return-Path: '.$emailto."\r\n"
+$headers .= 'Return-Path: '.$emailto."\r\n";
 
 if($_POST['Favorite_Color'] !== ''){
   die('Something went wrong!');
