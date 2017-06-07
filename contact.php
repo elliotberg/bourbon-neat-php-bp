@@ -3,6 +3,9 @@ $metaTitle='';
 $metaDesc='';
 $metaKeywords='';
 require_once 'includes/header.php';
+// change the captcha numbers here and the sum in send.php
+$a = 3;
+$b = 1;
 ?>
 
 <?php if (isset($_GET['confirm'])) {?>
@@ -17,7 +20,11 @@ require_once 'includes/header.php';
     <label for="email">Email<strong>*</strong></label>
     <input type="email" name="Email" id="email" placeholder="username@example.com" required="required">
 
-    <input type="text" id="fav-color" name="Favorite_Color" placeholder="Leave Blank If Human" autocomplete="off">
+    <label for="fav-color" class="visuallyhidden">Favorite Color</label>
+    <input type="text" name="Favorite_Color" id="fav-color" placeholder="Leave Blank If Human" autocomplete="off" tabindex="-1">
+
+    <label for="math">What is <?php echo $a;?> + <?php echo $b;?>?<strong>*</strong></label>
+    <input type="text" name="Math" id="math" required="required" placeholder="<?php echo $a;?> + <?php echo $b;?> =">
 
     <label for="cmnt">Comments/Questions<strong>*</strong></label>
     <textarea rows="3" name="Message" placeholder="Enter your message" id="cmnt" required="required"></textarea>

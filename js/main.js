@@ -4,4 +4,8 @@ jQuery(document).ready(function($){
     $("nav.main").slideToggle();
     $(this).toggleClass("active");
   });
+
+  if ($('#fav-color').length > 0) {
+    $("#fav-color").hide();
+  }
 });
