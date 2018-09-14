@@ -60,6 +60,22 @@ nav ul {
 }
 
 // forms
+label {
+  display: inline-block;
+  padding: 0 0 5px;
+}
+
+label.error {
+  display: block;
+  color: $body-color;
+  font-style: italic;
+}
+
+.invalid-msg {
+  color: $link-color;
+  margin: 0 0 1em;
+}
+
 #{$all-text-inputs} {
   width: 100%;
   padding: 5px;

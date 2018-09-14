@@ -34,7 +34,8 @@ button, [type='button'], [type='reset'], [type='submit'],
   color: #fff;
   background-color: #06f;
   border: none;
-  padding: 10px 15px; }
+  padding: 10px 15px;
+  white-space: nowrap; }
 
 button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus,
 button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover,
@@ -70,6 +71,19 @@ nav ul {
   list-style: none; }
   nav ul li a {
     display: block; }
+
+label {
+  display: inline-block;
+  padding: 0 0 5px; }
+
+label.error {
+  display: block;
+  color: #222;
+  font-style: italic; }
+
+.invalid-msg {
+  color: #06f;
+  margin: 0 0 1em; }
 
 [type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea {
   width: 100%;
@@ -125,7 +139,7 @@ nav.main {
       display: block; } }
   nav.main li {
     position: relative; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
       nav.main li {
         float: left; } }
     @media screen and (min-width: 1024px) {

@@ -10,7 +10,7 @@
         i<span class="visuallyhidden">Show Copyright Information</span>
         <div>
           &copy; 2018 - <?php echo date('Y')+1; ?><br />
-          <a href="http://www.picturethiswebcenter.com">Site by PictureThisWEBCENTER</a>
+          <a href="http://eberg.xyz" target="_blank" rel="noopener noreferrer">Site by Elliot Berg</a>
         </div>
       </div>
 
