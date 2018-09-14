@@ -22,6 +22,7 @@ a {
   background-color: $link-color;
   border: none;
   padding: 10px 15px;
+  white-space: nowrap;
 }
 
 #{$all-buttons-focus},

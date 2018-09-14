@@ -4,7 +4,6 @@
 # TEAM
 
     <name> elliot berg <role> development <twitter> @aghostbro
-    <name> evan dobos <role> design <email> evan@picturethiswebcenter.com
 
 # THANKS
 

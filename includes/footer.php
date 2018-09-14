@@ -9,7 +9,7 @@
       <div class="web-cred">
         i<span class="visuallyhidden">Show Copyright Information</span>
         <div>
-          &copy; 2017 - <?php echo date('Y'); ?><br />
+          &copy; 2017 - <?php echo date('Y')+1; ?><br />
           <a href="http://www.picturethiswebcenter.com">Site by PictureThisWEBCENTER</a>
         </div>
       </div>
