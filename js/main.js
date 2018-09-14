@@ -5,7 +5,4 @@ jQuery(document).ready(function($){
     $(this).toggleClass("active");
   });
 
-  if ($('#fav-color').length > 0) {
-    $("#fav-color").hide();
-  }
 });

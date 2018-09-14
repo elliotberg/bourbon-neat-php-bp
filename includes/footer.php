@@ -9,7 +9,7 @@
       <div class="web-cred">
         i<span class="visuallyhidden">Show Copyright Information</span>
         <div>
-          &copy; 2017 - <?php echo date('Y')+1; ?><br />
+          &copy; 2018 - <?php echo date('Y')+1; ?><br />
           <a href="http://www.picturethiswebcenter.com">Site by PictureThisWEBCENTER</a>
         </div>
       </div>
@@ -24,6 +24,8 @@
 
 <script src="/js/plugins.js"></script>
 <script src="/js/main.js"></script>
+<script src="/js/form-validation.js"></script>
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
 <script src="/js/vendor/retina.min.js"></script>
 
   </body>
