@@ -1,24 +1,17 @@
 <?php
-$honeypot = false;
-$captcha = false;
+// reCaptcha info
+$remoteip = $_SERVER['REMOTE_ADDR'];
+$response = $_POST["g-recaptcha-response"];
 
-if ($_POST['Favorite_Color'] === '') {
-  $honeypot = true;
-} else {
-  die('Something went wrong!');
-}
+include 'captcha/recaptcha-curl-request.php';
 
-if ($_POST['Math'] == 4) {
-  $captcha = true;
-} else {
-  die('Something went wrong!');
-}
+$captcha = check_recaptcha($response, $remoteip);
 
-if ($honeypot === true && $captcha === true) {
+if ($captcha === true) {
   $subject = 'Contact Form Message';
   //$emailfrom = '';
   $user_email = strip_tags($_POST['Email']);
-  $emailto = 'elliot@watermain.co';
+  $emailto = 'elliot@eberg.xyz';
   $url = '../contact.php?confirm=true';
 
   $headers  = 'MIME-Version: 1.0'."\r\n";
@@ -28,9 +21,9 @@ if ($honeypot === true && $captcha === true) {
   //$headers .= 'Reply-To: '.strip_tags($_POST['Email'])."\r\n";
   //$headers .= 'Return-Path: '.$emailto."\r\n";
 
-  $text = 'Message from<ul>';
+  $text = $subject.'<ul>';
   foreach ($_POST as $key => $value) {
-    if ($key !== 'Favorite_Color' && $key !== 'Math') {
+    if ($key !== 'g-recaptcha-response') {
       $key = str_replace('_', ' ', $key);
       $value = strip_tags($value);
       $value = htmlspecialchars($value);
@@ -43,5 +36,7 @@ if ($honeypot === true && $captcha === true) {
   echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';
   //offline testing
   //echo $emailto.'<br>'.$headers.'<br>'.$subject.'<br>'.$text;
+} else {
+  echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=/">';
 }
 ?>

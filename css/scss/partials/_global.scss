@@ -33,6 +33,14 @@ a {
   background-color: $link-color-alt;
 }
 
+button:disabled,
+[type='button']:disabled,
+[type='reset']:disabled,
+[type='submit']:disabled,
+.btn:disabled {
+  background-color: #888 !important;
+}
+
 .container {
   @include outer-container($mobile);
   width: 100%;

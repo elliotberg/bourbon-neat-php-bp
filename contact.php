@@ -12,7 +12,7 @@ require_once 'includes/header.php';
 <?php } else {?>
   <h2>Contact Form</h2>
 
-  <form id="contact-form" method="post" action="includes/contact-form.php">
+  <form id="contact-form" method="post" action="includes/send.php">
 
     <div class="invalid-msg"></div>
 

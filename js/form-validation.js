@@ -1,7 +1,3 @@
-function volunteerSubmit(token) {
-  document.getElementById('volunteer-form').submit();
-}
-
 function contactSubmit(token) {
   document.getElementById('contact-form').submit();
 }
@@ -28,13 +24,7 @@ jQuery(document).ready(function($){
 
   submitToCaptcha = function(form) {
     grecaptcha.execute();
-  },
-
-  $('#volunteer-form').validate({
-    errorPlacement: errorPlacer,
-    invalidHandler: showInvalidMsg,
-    submitHandler: submitToCaptcha,
-  });
+  };
 
   $('#contact-form').validate({
     errorPlacement: errorPlacer,

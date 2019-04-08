@@ -8,10 +8,7 @@
     <meta name="description" content="<?php if(isset($metaDesc) && $metaDesc !== '') echo $metaDesc;?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="/css/normalize.min.css">
-    <link rel="stylesheet" href="/css/h5bp.css">
     <link rel="stylesheet" href="/css/compiled.css">
-    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   </head>
   <body>
 
@@ -37,6 +34,7 @@
               <li><a href="">sub-item</a></li>
             </ul>
           </li>
+          <li><a href="/contact.php">Contact</a></li>
 
         </ul>
       </nav>
